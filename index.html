@@ -196,6 +196,19 @@
             margin: 5px;
         }
     }
+
+    .interest-tags{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tag{
+        background: rgba(255, 255, 255, .3);
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 5px;
+        margin-right: 5px;
+        border: 0.5px solid #fff;
+    }
 </style>
 
 <body style="background:#1970BF;width: 100%; height: 100%; padding: 0; margin: 0;">
@@ -219,6 +232,13 @@
                 <h4>About me:</h4>
                 <p>I'm recently graduated from Universidad Nacional of Costa Rica, I'm looking for new experiences and
                     learnings.</p>
+                <h4>Interests:</h4>
+                <div class="interest-tags">
+                    <div class="tag">Web</div>
+                    <div class="tag">Mobile</div>
+                    <div class="tag">Data Science</div>
+                    <div class="tag">DevOps</div>
+                </div>
                 <h4>Experience:</h4>
                 <div class="experiences-container" style="display:flex;flex-wrap: wrap;">
                     <div onclick="window.open('https://www.mobilize.net','_blank')" class="box-experience">
