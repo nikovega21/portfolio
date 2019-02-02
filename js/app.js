@@ -2,7 +2,7 @@
 var init = () => particlesJS('particles-js', {
     "particles": {
         "number": {
-            "value": 60
+            "value": 100
         },
         "color": {
             "value": "#ffffff"
@@ -33,11 +33,11 @@ var init = () => particlesJS('particles-js', {
             }
         },
         "size": {
-            "value": 4,
+            "value": 5,
             "random": true,
             "anim": {
-                "enable": false,
-                "speed": 60,
+                "enable": true,
+                "speed": 10,
                 "size_min": 0.1,
                 "sync": false
             }
@@ -58,7 +58,7 @@ var init = () => particlesJS('particles-js', {
             "out_mode": "out",
             "bounce": false,
             "attract": {
-                "enable": false,
+                "enable": true,
                 "rotateX": 600,
                 "rotateY": 1200
             }
