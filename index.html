@@ -19,13 +19,21 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    #particles-js {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0;
+    }
+
     #main-container {
         width: 100%;
         max-width: 1200px;
         color: #fff;
         padding: 20px;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, .1);
+        border-radius: 2px;
     }
 
     li {
@@ -59,7 +67,8 @@
 
     #about,
     #contact,
-    #some-works {
+    #some-works,
+    #knowledge {
         font-size: 13px;
     }
 
@@ -73,7 +82,7 @@
     }
 
     .box-experience {
-        background: rgba(255, 255, 255, .8);
+        background: rgba(255, 255, 255, .7);
         margin-right: 5px;
         text-align: center;
         border-radius: 2px;
@@ -122,6 +131,21 @@
         font-size: 13px;
     }
 
+    .technology-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .technologies-container {
+        padding: 3px;
+        display: flex;
+        border-radius: 3px;
+        flex-wrap: wrap;
+
+    }
+
     @media only screen and (max-width:600px) {
         .my-name {
             font-size: 15px;
@@ -139,12 +163,14 @@
             height: 100% !important;
             width: 100%;
         }
-        .experience-content{
-            
+
+        .experience-content {
+
             justify-content: center;
             align-items: center;
             flex: 1;
         }
+
         .major {
             font-size: 8px !important;
         }
@@ -160,7 +186,8 @@
 
         #about,
         #contact,
-        #some-works {
+        #some-works,
+        #knowledge {
             font-size: 11px !important;
         }
 
@@ -173,10 +200,7 @@
 
 <body style="background:#1970BF;width: 100%; height: 100%; padding: 0; margin: 0;">
     <!-- particles.js container -->
-    <div id="particles-js" style="position:fixed;width:100%;height:100%;">
-
-    </div>
-    <div style="display: flex;align-items:center;width: 100%;height: 100%; align-content: center;flex-direction: column;">
+    <div style="display: flex;align-items:center;width: 100%;height: 100%; align-items: center;flex-direction: column;">
         <div id="main-container">
             <div id="personal-information">
                 <img id="me-image" src="./img/me.jpg">
@@ -196,20 +220,33 @@
                     learnings.</p>
                 <h4>Experience:</h4>
                 <div class="experiences-container" style="display:flex;flex-wrap: wrap;">
-                    <div class="box-experience">
+                    <div onclick="window.open('https://www.mobilize.net','_blank')" class="box-experience">
                         <img src="./img/mobilize.png">
                         <div class="experience-content">
                             <div class="experiencie-title">Intern - Mobilize.Net</div>
                             <div>07/2018 - 11/2018</div>
                         </div>
                     </div>
-                    <div class="box-experience">
+                    <div onclick="window.open('https://cablevision.cr/en','_blank')" class="box-experience">
                         <img src="./img/cablevision.png">
                         <div class="experience-content">
                             <div class="experiencie-title">Student Practice - Cablevision CR</div>
                             <div>02/2017 - 06/2018</div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="knowledge">
+                <h4>Technologies:</h4>
+                <div class="technologies-container">
+                    <div class="technology-item"><img width="40" src="./img/angular.png"></div>
+                    <div class="technology-item"><img width="35" src="./img/android.png"></div>
+                    <div class="technology-item"><img width="40" src="./img/react-native.png"></div>
+                    <div class="technology-item"><img width="70" src="./img/devops.png"></div>
+                    <div class="technology-item"><img width="45" src="./img/cplusplus.png"></div>
+                    <div class="technology-item"><img width="40" src="./img/csharp.png"></div>
+                    <div class="technology-item"><img width="80" src="./img/html-css-js.png"></div>
+                    <div class="technology-item"><img width="70" src="./img/node.png"></div>
                 </div>
             </div>
             <div id="some-works">
@@ -228,7 +265,9 @@
             </div>
         </div>
     </div>
+    <div id="particles-js">
 
+    </div>
 
 </body>
 
